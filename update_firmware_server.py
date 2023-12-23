@@ -2,12 +2,13 @@ from web3 import Web3
 import paho.mqtt.client as mqtt
 
 # Ethereum Configuration
-ethereum_provider = "http://your_ethereum_provider"
-ethereum_private_key = "your_private_key"
-contract_address = "your_smart_contract_address"
+ethereum_provider = "localhost"
+ethereum_private_key = "private_key" 
+contract_address = "0x"
+your_contract_abi = [...]
 
 # MQTT Configuration
-mqtt_broker = "mqtt://your_mqtt_broker"
+mqtt_broker = 
 mqtt_topic = "firmware/update"
 
 # Web3 instance
@@ -32,5 +33,6 @@ def update_firmware(new_firmware, metadata):
     mqtt_client.publish(mqtt_topic, f"Firmware update: {new_firmware} - Metadata: {metadata}")
     mqtt_client.disconnect()
 
-# Example usage
+# Usage
 update_firmware("Version 1.0.0", "Metadata: Some additional information")
+
