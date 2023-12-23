@@ -3,13 +3,14 @@ import paho.mqtt.client as mqtt
 from web3 import Web3
 
 # MQTT Configuration
-mqtt_broker = "mqtt://your_broker_ip"
+mqtt_broker =
 mqtt_topic = "firmware/update"
 
 # Ethereum Configuration
-ethereum_provider = "http://your_ethereum_provider"
-ethereum_private_key = "your_private_key"
-contract_address = "your_smart_contract_address"
+ethereum_provider =
+ethereum_private_key = 
+contract_address =
+your_contract_abi =
 
 # Web3 instance
 w3 = Web3(Web3.HTTPProvider(ethereum_provider))
